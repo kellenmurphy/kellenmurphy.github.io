@@ -5,11 +5,20 @@
 .works.upper {font-weight: 700;}
 .works.lower {font-weight:300; line-height: 0px;}
 
-body {
-    background-color: black;
-    color: white;
-    font-family: sans-serif;
+:root {
+    --body-bg: white;
+    --body-color: black;
+}
 
+:root[data-theme='dark'] {
+    --body-bg: black;
+    --body-color: white;
+}
+
+body {
+    background-color: var(--body-bg);
+    color: var(--body-color);
+    font-family: sans-serif;
 }
 
 @media screen and (prefers-color-scheme: light) {
@@ -17,4 +26,17 @@ body {
         background-color: white;
         color: black;
     }
+}
+
+#schemeToggle {
+    font-family: sans-serif;
+    font-size: small;
+    border: none;
+    background-color: var(--body-bg);
+    color: var(--body-color);
+
+}
+
+#schemeToggle:focus-visible {
+    outline: none;
 }
