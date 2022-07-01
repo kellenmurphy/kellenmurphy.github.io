@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans');
+
+.shrug {font-size: 6vmin;}
+.works {text-transform: uppercase;}
+.works.upper {font-weight: 700;}
+.works.lower {font-weight:300; line-height: 0px;}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+
+}
+
+@media screen and (prefers-color-scheme: light) {
+    body {
+        background-color: white;
+        color: black;
+    }
+}
