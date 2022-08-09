@@ -1,18 +1,55 @@
-<nav class="navbar navbar-expand-lg bg-light">
-    <div class="container-fluid">
-    <a class="navbar-brand" href="#">Kellen Murphy</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-        </ul>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+      <div class="d-flex flex-grow-1">
+          
+          <span class="w-100 d-lg-none d-block"> <!-- hidden spacer to center brand on mobile --></span>
+          
+          <a class="navbar-brand d-none d-lg-inline-block" href="/">
+            <img class="headshot" src="/assets/images/headshot.jpg" alt="This is me, Kellen Murphy!" />
+            Kellen Murphy
+            <subtitle>Software Engineer + IAM/SSO SME</subtitle>
+          </a>
+          
+          <a class="navbar-brand-two mx-auto d-lg-none d-inline-block" href="/">
+              <img class="headshot" src="/assets/images/headshot.jpg" alt="This is me, Kellen Murphy!">
+          </a>
+          
+          <div class="w-100 toggle">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+          </div>
+
       </div>
-    </div>
-  </nav>
+      <div class="collapse navbar-collapse flex-grow-1" id="navbar">
+            <ul class="navbar-nav ms-auto flex-nowrap">
+                <li class="nav-item">
+                    {% for post in site.posts limit:1 %}
+                    <a href="{{ post.url }}" class="nav-link m-2 menu-item">latest post</a>
+                    {% endfor %}
+                </li>
+                <li class="nav-item">
+                    <a href="/blog" class="nav-link m-2 menu-item">archives</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/kellen" class="nav-link m-2 menu-item nav-active">about me</a>
+                </li>
+                <li class="nav-item">
+                    <a href="resume.pdf" class="nav-link m-2 menu-item nav-active">resumé</a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://linkedin.com/in/kellenmurphy" target="_new" class="nav-link m-2 menu-item nav-active">linkedin</a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://github.com/kellenmurphy" target="_new" class="nav-link m-2 menu-item nav-active">github</a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://twitter.com/kellenmurphy" target="_new" class="nav-link m-2 menu-item nav-active">twitter</a>
+                </li>
+                <li class="nav-item">
+                    <a href="mailto:me@kellenmurphy.com" class="nav-link m-2 menu-item nav-active">contact</a>
+                </li>
+            </ul>
+        </div>
+  </div>
+</nav>

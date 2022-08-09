@@ -1,5 +1,6 @@
-$backgroundColor: #ffffff;
-$bodyColor: #000000;
+$backgroundColor: #FFF;
+$bodyColor: #000;
+$hoverColor: #777;
 $bodyFont: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
 
 body {
@@ -7,17 +8,80 @@ body {
   color: $bodyColor;
   font-family: $bodyFont;
 
-  .navbar {
+  footer {
+
+    svg {
+      fill: $hoverColor !important;
+    }
+
+    .license {
+      color: $hoverColor;
+      font-size: 0.7rem;
+    }
+
+  }
+
+  a, a:visited {
+    color: $bodyColor;
+    text-decoration: none;
+  }
+  a:hover {
+    color: $hoverColor;
+    text-decoration: none;
+  }
+
+  .frontpage-circ {
+    width: 50%;
+    max-width: 300px;
+    min-width: 100px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+  }
+
+  .frontpage-snippet {
     
-    span.headshot {
+    .latest-post-footer {
+      text-align: left;
+    }
+
+    .snippet {
+      text-align: justify;
+    }
+
+  }
+
+  .navbar {
+
+    svg {
+      fill: $hoverColor !important;
+    }
+    
+    .toggle {
+      text-align: right;
+    }
+    
+    img.headshot {
       background-image: url("/assets/images/headshot.jpg");
       background-size: contain;
       width: 40px;
       height: 40px;
-      position: absolute;
+      margin-right: 10px;
       border-radius: 10px 20px 20px;
     }
 
+    .navbar-brand {
+
+      subtitle {
+        font-size: 0.7rem;
+        color: darkgrey;
+      }
+
+    }
+
+    #myNavbar {
+      text-align: center;
     }
 
   }
+
+}
