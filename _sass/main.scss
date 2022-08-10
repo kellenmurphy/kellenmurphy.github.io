@@ -1,6 +1,7 @@
-$backgroundColor: #FFF;
+$backgroundColor: #fff;
 $bodyColor: #000;
-$hoverColor: #777;
+$linkColor: #999;
+$hoverColor: #6c5aa5;
 $bodyFont: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
 
 body {
@@ -11,18 +12,21 @@ body {
   footer {
 
     svg {
+      fill: $linkColor !important;
+    }
+    a:hover svg{
       fill: $hoverColor !important;
     }
 
     .license {
-      color: $hoverColor;
+      color: $linkColor;
       font-size: 0.7rem;
     }
 
   }
 
   a, a:visited {
-    color: $bodyColor;
+    color: $linkColor;
     text-decoration: none;
   }
   a:hover {
@@ -55,7 +59,7 @@ body {
     svg {
       fill: $hoverColor !important;
     }
-    
+
     .toggle {
       text-align: right;
     }
@@ -82,6 +86,26 @@ body {
       text-align: center;
     }
 
+   .nav-link:hover {
+      color: $hoverColor !important;
+   }
+
   }
 
+  .tags {
+    font-size: 0.7rem;
+  }
+
+  .post-date {
+    font-size: 0.9rem;
+  }
+
+  ul li {
+      position: relative;
+      left: 2em;
+      padding-right: 1em;
+  }
+
+
+  
 }
