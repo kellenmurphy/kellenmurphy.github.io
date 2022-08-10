@@ -4,7 +4,7 @@ This repository contains the source code for my [personal blog](https://kellenmu
 
 ## `gh-pages` branch
 
-This branch is protected, and from this branch the site will get deployed, so make sure to commit to a new branch (i.e. this is getting pushed to `chg081022-add-readme`) and create a PR to merge. Not sure why I'm doing this, but I'm doing it... ¯\_(ツ)_/¯
+This branch is protected, and from this branch the site will get deployed, so make sure to commit to a new branch (i.e. this is getting pushed to `chg081022-add-readme`) and create a PR to merge. Not sure why I'm doing this, but I'm doing it... ¯\\\_(ツ)\_/¯
 
 ## Drafts
 
