@@ -1,8 +1,9 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
-    <meta http-equiv='Content-Security-Policy' content="default-src 'self' *.kellenmurphy.com; style-src 'self' 'unsafe-inline' data:; script-src 'self'; img-src * 'self' data:">
+    <meta http-equiv='Content-Security-Policy' content="base-uri 'self'; connect-src 'self'; default-src 'self'; font-src 'self'; frame-src 'self'; img-src 'self'; manifest-src 'self'; media-src 'self'; object-src 'none'; report-uri https://6318904329ad77a9b5a128ff.endpoint.csper.io/; script-src 'report-sample' 'self'; style-src 'report-sample' 'self'; worker-src 'none';">
     <title>{{ site.title }} - {{ page.title }}</title>
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
     <script src="/assets/js/bootstrap.min.js"></script>
 </head>
+
