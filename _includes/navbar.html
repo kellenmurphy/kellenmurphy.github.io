@@ -23,8 +23,8 @@
       </div>
       <div class="collapse navbar-collapse flex-grow-1" id="navbar">
             <ul class="navbar-nav ms-auto flex-nowrap">
-	       {% comment %} 
-	       <li class="nav-item">
+	            {% comment %} 
+	            <li class="nav-item">
                     {% for post in site.posts limit:1 %}
                     <a href="{{ post.url }}" class="nav-link m-2 menu-item">latest</a>
                     {% endfor %}
@@ -32,13 +32,15 @@
                 <li class="nav-item">
                     <a href="/blog" class="nav-link m-2 menu-item">archives</a>
                 </li>
-		{% endcomment %}
+                {% endcomment %}
                 <li class="nav-item">
                     <a href="/about" class="nav-link m-2 menu-item nav-active">about</a>
                 </li>
+	            {% comment %}
                 <li class="nav-item">
                     <a href="resume.pdf" class="nav-link m-2 menu-item nav-active">resumé</a>
                 </li>
+                {% endcomment %}
                 <li class="nav-item">
                     <a href="https://linkedin.com/in/kellenmurphy" target="_new" class="nav-link m-2 menu-item nav-active">linkedin</a>
                 </li>
