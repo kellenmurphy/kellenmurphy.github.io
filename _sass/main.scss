@@ -44,6 +44,8 @@ body {
     min-width: 100px;
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
   }
 
   .frontpage-snippet {
@@ -123,5 +125,5 @@ body {
     max-width:500px;
     color: red;
   }
-  
+
 }
