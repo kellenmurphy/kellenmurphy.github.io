@@ -81,6 +81,8 @@ body {
       height: 40px;
       margin-right: 10px;
       border-radius: 10px 20px 20px;
+      -webkit-filter: grayscale(1);
+      filter: grayscale(1);
     }
 
     .navbar-brand {
