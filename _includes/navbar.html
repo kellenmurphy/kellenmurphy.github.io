@@ -1,59 +1,63 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container">
-      <div class="d-flex flex-grow-1">
-          
-          <span class="w-100 d-lg-none d-block"> <!-- hidden spacer to center brand on mobile --></span>
-          
-          <a class="navbar-brand d-none d-lg-inline-block" href="/">
-            <img class="headshot" src="/assets/images/headshot.jpg" alt="This is me, Kellen Murphy!" />
-            Kellen Murphy
-            <subtitle>Software Engineer + IAM/SSO SME</subtitle>
-          </a>
-          
-          <a class="navbar-brand-two mx-auto d-lg-none d-inline-block" href="/">
-              <img class="headshot" src="/assets/images/headshot.jpg" alt="This is me, Kellen Murphy!">
-          </a>
-          
-          <div class="w-100 toggle">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
-                  <span class="navbar-toggler-icon"></span>
-              </button>
-          </div>
+    <div class="d-flex flex-grow-1">
 
+      <span class="w-100 d-lg-none d-block"> </span>
+
+      <a class="navbar-brand d-none d-lg-inline-block" href="/">
+        <img class="headshot" src="/assets/images/headshot.jpg" alt="This is me, Kellen Murphy!" />
+        Kellen Murphy
+        <subtitle>Software Engineer + IAM/SSO SME</subtitle>
+      </a>
+
+      <a class="navbar-brand-two mx-auto d-lg-none d-inline-block" href="/">
+        <img class="headshot" src="/assets/images/headshot.jpg" alt="This is me, Kellen Murphy!">
+      </a>
+
+      <div class="w-100 toggle">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
       </div>
-      <div class="collapse navbar-collapse flex-grow-1" id="navbar">
-            <ul class="navbar-nav ms-auto flex-nowrap">
-	            {% comment %} 
-	            <li class="nav-item">
-                    {% for post in site.posts limit:1 %}
-                    <a href="{{ post.url }}" class="nav-link m-2 menu-item">latest</a>
-                    {% endfor %}
-                </li>
-                <li class="nav-item">
-                    <a href="/blog" class="nav-link m-2 menu-item">archives</a>
-                </li>
-                {% endcomment %}
-                <li class="nav-item">
-                    <a href="/about" class="nav-link m-2 menu-item nav-active">about</a>
-                </li>
-	            {% comment %}
-                <li class="nav-item">
-                    <a href="resume.pdf" class="nav-link m-2 menu-item nav-active">resumé</a>
-                </li>
-                {% endcomment %}
-                <li class="nav-item">
-                    <a href="https://linkedin.com/in/kellenmurphy" target="_new" class="nav-link m-2 menu-item nav-active">linkedin</a>
-                </li>
-                <li class="nav-item">
-                    <a href="https://github.com/kellenmurphy" target="_new" class="nav-link m-2 menu-item nav-active">github</a>
-                </li>
-                <li class="nav-item">
-                    <a rel="me" href="https://infosec.exchange/@kellenmurphy" target="_new" class="nav-link m-2 menu-item nav-active">mastodon</a>
-                </li>
-                <li class="nav-item">
-                    <a href="mailto:me@kellenmurphy.com" class="nav-link m-2 menu-item nav-active">mail</a>
-                </li>
-            </ul>
-        </div>
+
+    </div>
+    <div class="collapse navbar-collapse flex-grow-1" id="navbar">
+      <ul class="navbar-nav ms-auto flex-nowrap">
+        {% comment %}
+        <li class="nav-item">
+          {% for post in site.posts limit:1 %}
+          <a href="{{ post.url }}" class="nav-link m-2 menu-item">latest</a>
+          {% endfor %}
+        </li>
+        {% endcomment %}
+        {% comment %}
+        <li class="nav-item">
+          <a href="/blog" class="nav-link m-2 menu-item">archives</a>
+        </li>
+        {% endcomment %}
+        <li class="nav-item">
+          <a href="/about" class="nav-link m-2 menu-item nav-active">about</a>
+        </li>
+        {% comment %}
+        <li class="nav-item">
+          <a href="resume.pdf" class="nav-link m-2 menu-item nav-active">resumé</a>
+        </li>
+        {% endcomment %}
+        <li class="nav-item">
+          <a href="https://linkedin.com/in/kellenmurphy" target="_new"
+            class="nav-link m-2 menu-item nav-active">linkedin</a>
+        </li>
+        <li class="nav-item">
+          <a href="https://github.com/kellenmurphy" target="_new" class="nav-link m-2 menu-item nav-active">github</a>
+        </li>
+        <li class="nav-item">
+          <a rel="me" href="https://infosec.exchange/@kellenmurphy" target="_new"
+            class="nav-link m-2 menu-item nav-active">mastodon</a>
+        </li>
+        <li class="nav-item">
+          <a href="mailto:me@kellenmurphy.com" class="nav-link m-2 menu-item nav-active">mail</a>
+        </li>
+      </ul>
+    </div>
   </div>
 </nav>
